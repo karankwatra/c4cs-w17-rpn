@@ -19,10 +19,12 @@ def calculate(arg):
             result = operator_fn(arg1, arg2)
 
             stack.append(result)
+    return stack.pop()
 
 def main():
     while True:
         result = calculate(input('rpn calc> '))
+        print("Result:", result)
 
 if __name__ == '__main__':
     main()
