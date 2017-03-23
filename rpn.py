@@ -9,14 +9,7 @@ OPERATORS = {
 	    '*' : operator.mul,
 	    '/' : operator.truediv,
 	    '^' : operator.pow
-}
-OP_COLORS = {
-		'+' : 'red',
-	    '-' : 'orange',
-	    '*' : 'yellow',
-	    '/' : 'green',
-	    '^' : 'blue',
-}
+	    }
 
 
 def calculate(arg, ops):
@@ -33,9 +26,9 @@ def calculate(arg, ops):
             operator_fn = OPERATORS[operand]
             result = operator_fn(arg1, arg2)
             stack.append(result)
-			ops.append(arg1)
-			ops.append(arg2)
-			ops.append(operand)
+            ops.append(arg1)
+            ops.append(arg2)
+            ops.append(operand)
 
     return stack.pop()
 
@@ -45,10 +38,10 @@ def main():
 		ops = []
 		result = calculate(input('rpn calc> '), ops)
 
-		#if ops[0] < 0:
-		#	print(colored(str(ops[0]), 'red'), end="")
-	#	else:
-			#print(colored(str(ops[0]), 'green'), end="")
+		if ops[0] < 0:
+			print(colored(str(ops[0]), 'red'), end="")
+		else:
+			print(colored(str(ops[0]), 'green'), end="")
 
         if result < 0:
             result = colored(result, 'red')
