@@ -5,6 +5,7 @@ python:
 
 install:
   - pip install coveralls
+  - pip install termcolor
 
 script: coverage run -m unittest
 
