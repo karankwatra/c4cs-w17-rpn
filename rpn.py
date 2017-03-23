@@ -43,12 +43,21 @@ def main():
         else:
         	print(colored(str(ops[0]), 'green'), end="")
 
+        print(colored(str(ops[2], 'blue')), end="")
+
+        if ops[1] < 0:
+        	print(colored(str(ops[0]), 'red'), end="")
+        else:
+        	print(colored(str(ops[0]), 'green'), end="")
+
+        print(colored("=", 'blue')), end="")
+
         if result < 0:
             result = colored(result, 'red')
         else:
             result = colored(result, 'green')
 
-        print('Result:', result)
+        print(result)
 
 
 if __name__ == '__main__':
