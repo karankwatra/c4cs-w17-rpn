@@ -43,14 +43,14 @@ def main():
         else:
         	print(colored(str(ops[0]), 'green'), end="")
 
-        print(colored(str(ops[2], 'blue')), end="")
+        print(colored(str(ops[2]), 'blue'), end="")
 
         if ops[1] < 0:
-        	print(colored(str(ops[0]), 'red'), end="")
+        	print(colored(str(ops[1]), 'red'), end="")
         else:
-        	print(colored(str(ops[0]), 'green'), end="")
+        	print(colored(str(ops[1]), 'green'), end="")
 
-        print(colored("=", 'blue')), end="")
+        print((colored("=", 'blue')), end="")
 
         if result < 0:
             result = colored(result, 'red')
