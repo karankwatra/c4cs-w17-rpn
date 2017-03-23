@@ -35,13 +35,13 @@ def calculate(arg, ops):
 
 def main():
     while True:
-		ops = []
-		result = calculate(input('rpn calc> '), ops)
+        ops = []
+        result = calculate(input('rpn calc> '), ops)
 
-		if ops[0] < 0:
-			print(colored(str(ops[0]), 'red'), end="")
-		else:
-			print(colored(str(ops[0]), 'green'), end="")
+        if ops[0] < 0:
+        	print(colored(str(ops[0]), 'red'), end="")
+        else:
+        	print(colored(str(ops[0]), 'green'), end="")
 
         if result < 0:
             result = colored(result, 'red')
