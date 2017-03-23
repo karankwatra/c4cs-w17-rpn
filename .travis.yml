@@ -6,7 +6,7 @@ python:
 install:
   - pip install coveralls
 
-script: make test
+script: coverage run -m unittest
 
 after_success:
   - coveralls
